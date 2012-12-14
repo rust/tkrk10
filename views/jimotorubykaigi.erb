@@ -3,20 +3,14 @@
     color: gray;
     text-decoration: line-through;
   }
-  div.container p {
-    line-height: 1.8;
-  }
-  div.container li {
+  div.container dl.qanda dd {
     padding-top: 8px;
   }
-  div.container dd {
-    padding-top: 8px;
-  }
-  div.container dt {
+  div.container dl.qanda dt {
     padding-top: 8px;
   }
 </style>
-<div class="container">
+<div class="container" style="line-height: 1.8;">
   <div class="row-fluid">
     <div class="page-header">
       <h1>地元Ruby会議</h1>
@@ -47,18 +41,18 @@
         参加条件はとくにありませんが、発表するときには以下の点に注意してください。
       </p>
       <ul>
-        <li>出身地を申告してください。</li>
-        <li>
+        <li style="padding-top: 8px">出身地を申告してください。</li>
+        <li style="padding-top: 8px">
           発表方法は以下の2種類限ります。
-          <ul>
-            <li>地元の方言で話す</li>
-            <li>地元のことを話す(方言は自由)</li>
+          <ul class="qanda">
+            <li style="padding-top: 8px">地元の方言で話す</li>
+            <li style="padding-top: 8px">地元のことを話す(方言は自由)</li>
           </ul>
         </li>
       </ul>
 
       <h2>Q&A</h2>
-      <dl>
+      <dl class="qanda">
         <dt>RejectKaigiとは違うのですか？</dt>
         <dd>そんなちいさなことに捕らわれていてはいけません。</dd>
         <dt>TokyuRubyKaigiとは違うのですか？</dt>
